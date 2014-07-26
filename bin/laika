@@ -6,6 +6,7 @@ laika = require('./_laika');
 
 var optionsParser = commander
   .usage('[options] [path filter]')
+  .option('-h, --mhost <host>', 'specify mongodb host [default: localhost]', 'localhost')
   .option('-m, --mport <port>', 'specify mongodb port [default: 27017]', 27017)
   .option('-u, --ui <tdd|bdd>', 'specify test user interfaces (tdd|bdd) [default: tdd]', 'tdd')
   .option('-R, --reporter <reporter>', 'specify reporter to use (support all mocha reporters) [default: spec]', 'spec')
